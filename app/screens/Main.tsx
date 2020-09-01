@@ -21,7 +21,7 @@ export default class Main extends React.Component {
       loading: false,
       perfiles: [],
       url:
-        'http://192.168.0.2:3000/perfil?filter={"include":[{"relation":"pais"},{"relation":"ciudad"},{"relation":"imagenes"}]}',
+        'http://192.168.1.13:3000/perfil?filter={"include":[{"relation":"pais"},{"relation":"ciudad"},{"relation":"imagenes"}]}',
     };
   }
 
@@ -72,7 +72,7 @@ export default class Main extends React.Component {
                     source={{
                       width: 200,
                       height: 150,
-                      uri: `http://192.168.0.2:3000/files/1/${item.imagenes[0].id}`,
+                      uri: `192.168.1.13:3000/files/1/${item.imagenes[0].id}`,
                        
                     }}
                   />
